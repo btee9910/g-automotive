@@ -5,7 +5,7 @@ const Banner = () => {
         <div className="hero">
 
             <div className="hero-image">
-                <img src="../../../images/banner-image.jpg" alt="Ford Ranger Raptor" />
+                <img src="./images/banner-image.jpg" alt="Ford Ranger Raptor" />
             </div>
 
             <div className="hero-overlay">
