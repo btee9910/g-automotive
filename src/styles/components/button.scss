@@ -1,0 +1,30 @@
+/*----------------------------------------------------------------------------- 
+BUTTON STYLES 
+-----------------------------------------------------------------------------*/
+
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    padding: 0.4rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    background-color: rgb(0, 115, 210);
+
+        &:hover {
+            background-color: rgb(0, 97, 176);
+        }
+
+        &:active {
+            border: 1px solid rgba(255, 255, 255, 0);
+            border-style: ridge;
+        }
+}
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 1.2rem;
+    }
+}

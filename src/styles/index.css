@@ -1,0 +1,301 @@
+/*----------------------------------------------------------------------------- 
+RESET STYLES 
+-----------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*----------------------------------------------------------------------------- 
+Global STYLES 
+-----------------------------------------------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --hero-height: 584px;
+  --card-radius: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*----------------------------------------------------------------------------- 
+Typography STYLES 
+-----------------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.9rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: black;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+/*----------------------------------------------------------------------------- 
+BANNER STYLES 
+-----------------------------------------------------------------------------*/
+.hero {
+  position: relative;
+  min-height: var(--hero-height);
+}
+
+.hero-image {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.hero-image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: relative;
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-block: 3rem;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.hero-overlay .banner-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 860px;
+  padding-inline: 1rem;
+}
+.hero-overlay .banner-content .banner-button {
+  margin-block: 30px 5px;
+  text-align: center;
+  height: 50px;
+  width: 192px;
+}
+
+/*----------------------------------------------------------------------------- 
+BUTTON STYLES 
+-----------------------------------------------------------------------------*/
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  padding: 0.4rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  background-color: rgb(0, 115, 210);
+}
+.btn:hover {
+  background-color: rgb(0, 97, 176);
+}
+.btn:active {
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-style: ridge;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+/*----------------------------------------------------------------------------- 
+CARD LAYOUT STYLES 
+-----------------------------------------------------------------------------*/
+.card-section {
+  padding: 26px 15px;
+}
+
+.cards-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards-layout .card {
+  padding: 24px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.cards-layout .card .card-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: var(--card-radius);
+  box-shadow: 0px 5px 10px rgb(167, 167, 167);
+  max-width: 323px;
+  min-width: 180px;
+}
+
+@media (min-width: 980px) {
+  .cards-layout {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: unset;
+    justify-content: center;
+  }
+  .cards-layout .card {
+    padding-inline: 28px;
+  }
+}
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 140px;
+}
+.card-image img {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: var(--card-radius);
+  border-top-right-radius: var(--card-radius);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  height: 100%;
+}
+.card-content .card-body {
+  position: relative;
+  font-size: 0.85rem;
+  line-height: 1.1rem;
+  color: rgb(149, 149, 149);
+  text-align: justify;
+  padding-right: 12px;
+  padding-bottom: 20px;
+}
+.card-content .card-body :not(:last-child) {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.card-button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding-bottom: 4px;
+  margin-top: auto;
+}
+.card-button .btn {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.on-load {
+  outline: 5px solid rgb(0, 115, 210);
+  outline-offset: -5px;
+}
+
+/*# sourceMappingURL=index.css.map */
