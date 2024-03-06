@@ -15,6 +15,12 @@ CARD LAYOUT STYLES
         padding: 24px 10px;
         display: flex;
         flex-direction: column;
+        transition: 0.25s ease-in-out;
+
+        &:hover {
+            padding-block: 21px 27px;
+            transition: 0.25s ease-in-out;
+        }
 
         .card-layout {
             display: flex;

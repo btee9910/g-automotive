@@ -221,6 +221,11 @@ CARD LAYOUT STYLES
   padding: 24px 10px;
   display: flex;
   flex-direction: column;
+  transition: 0.25s ease-in-out;
+}
+.cards-layout .card:hover {
+  padding-block: 21px 27px;
+  transition: 0.25s ease-in-out;
 }
 .cards-layout .card .card-layout {
   display: flex;

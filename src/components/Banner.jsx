@@ -11,7 +11,7 @@ const Banner = () => {
             <div className="hero-overlay">
                 <div className="container banner-content">
                     <h1>Welcome to G Automotive</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem reprehenderit nihil ad sequi minima animi atque velit praesentium quas molestias delectus, aliquid magnam rem obcaecati maxime dolor autem. Tempore!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem reprehenderit nihil ad sequi minima animi atque velit praesentium quas molestias delectus, aliquid magnam rem obcaecati maxime dolor autem. Tempore! Possimus ipsam, nam atque reprehenderit accusamus quas. Hic adipisci non at odit, temporibus porro dolor? Earum reiciendis, idreprehenderit accusamus illum minus quos corrupti?</p>
 
                     <div className="banner-button">
                         <Button context='Contact Us' link=''/>
