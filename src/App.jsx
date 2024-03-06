@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Banner from './components/Banner'
 import CardSection from './components/card/CardLayout'
 
